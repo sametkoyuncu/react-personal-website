@@ -9,36 +9,42 @@ import IMG6 from '../../assets/portfolio6.jpg'
 
 const data = [
   {
+    id:1,
     title: "This is a portfolio item title",
     image: IMG1,
     btnUrl1: "http://github.com",
     btnUrl2: "http://github.com",
   },
-   {
+  {
+    id:2,
     title: "This is a portfolio item title",
     image: IMG2,
     btnUrl1: "http://github.com",
     btnUrl2: "http://github.com",
   },
-    {
+  {
+    id: 3,
     title: "This is a portfolio item title",
     image: IMG3,
     btnUrl1: "http://github.com",
     btnUrl2: "http://github.com",
   },
-     {
+  {
+    id: 4,
     title: "This is a portfolio item title",
     image: IMG4,
     btnUrl1: "http://github.com",
     btnUrl2: "http://github.com",
   },
-      {
+  {
+    id: 5,
     title: "This is a portfolio item title",
     image: IMG5,
     btnUrl1: "http://github.com",
     btnUrl2: "http://github.com",
   },
-       {
+  {
+    id: 6,
     title: "This is a portfolio item title",
     image: IMG6,
     btnUrl1: "http://github.com",
@@ -54,9 +60,9 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map(item => (
-          <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={item.image} alt="portfolio_image" />
+          <article className="portfolio__item" kyy={item.id}>
+          <div>
+            <img  className="portfolio__item-image" src={item.image} alt="portfolio_image" />
           </div>
             <h3>{item.title}</h3>
             <div className="portfolio__item-cta">
