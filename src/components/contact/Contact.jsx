@@ -51,6 +51,10 @@ const Contact = () => {
           
         </div>
         {/* end of contact options */}
+        
+        {/* TODO: 2:59:00 / if you want to works this form, 
+                  please watch tutorial from this time 2:59:00 
+                  ( tutorial: https://www.youtube.com/watch?v=G-Cr00UYokU ) */}
         <form action=''>
           <input type='text' name='name' placeholder='Your Full Name' required />
           <input type='email' name='email' placeholder='Your Email' required />
